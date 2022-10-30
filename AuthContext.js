@@ -4,6 +4,12 @@ const AuthContext = createContext(null);
 
 function reducer(state, action) {
     switch (action.type) {
+        case 'loggedIn': {
+            return { ...state, isAuthenticated: true, user: action.payload }
+        }
+        case 'logout': {
+            return { ...state, isAuthenticated: false, user: null };
+        }
         case 'currentState': {
             return state;
         }
