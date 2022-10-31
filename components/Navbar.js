@@ -9,7 +9,7 @@ export default function Navbar() {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Next MUI Starter
+                        Gari SDK FrontEnd
                     </Typography>
                 </Toolbar>
             </AppBar>
